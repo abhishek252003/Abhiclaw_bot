@@ -104,8 +104,10 @@ const startBot = async () => {
             console.error('Telegram Bot Error:', error);
             if (error.code === 'token_missing' || (error.message && error.message.includes('token_missing'))) {
                 ctx.reply('SYSTEM_ERROR: PUTER_TOKEN_MISSING. ACCESS_DENIED. PLEASE_UPDATE_ENV_CONFIG.');
+            } else if (error.message && error.message.includes('Prisma')) {
+                ctx.reply(`SYSTEM_ERROR: DATABASE_LINK_FAILED. DETAIL: ${error.message.split('\n')[0]}`);
             } else {
-                ctx.reply('SYSTEM_ERROR: AI_LINK_FAILED. COMMAND_ABORTED.');
+                ctx.reply(`SYSTEM_ERROR: AI_LINK_FAILED. DETAIL: ${error.message || 'UNKNOWN_ERROR'}`);
             }
         }
     });
