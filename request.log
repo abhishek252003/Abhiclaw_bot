@@ -1,0 +1,171 @@
+2026-02-14T14:54:24.218Z - POST /api/auth/login
+2026-02-14T14:54:32.344Z - POST /api/auth/login
+2026-02-14T14:54:32.812Z - GET /api/assistants
+2026-02-14T14:54:32.825Z - GET /api/assistants
+2026-02-14T14:54:40.047Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T14:54:40.061Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T14:54:44.939Z - POST /api/chat
+Chat Request: {"assistantId":"34d7a1dd-a771-4f13-98f0-34358f9d14d5","message":"hi","userId":"b464a22d-6e0c-4c14-b642-1e2d105241ae"}
+Chat error: PrismaClientValidationError: 
+Invalid `prisma.message.create()` invocation in
+C:\Users\abhia\Downloads\ai wrapper\backend\src\controllers\chat.controller.js:68:53
+
+  65 // I'll assume standard object structure access content.
+  66 
+  67 // 6. Save AI response
+→ 68 const savedAiMessage = await prisma.message.create({
+       data: {
+         role: "assistant",
+         assistantId: "34d7a1dd-a771-4f13-98f0-34358f9d14d5",
+     +   content: String
+       }
+     })
+
+Argument `content` is missing.
+    at wn (C:\Users\abhia\Downloads\ai wrapper\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at $n.handleRequestError (C:\Users\abhia\Downloads\ai wrapper\backend\node_modules\@prisma\client\runtime\library.js:121:6958)
+    at $n.handleAndLogRequestError (C:\Users\abhia\Downloads\ai wrapper\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\abhia\Downloads\ai wrapper\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\abhia\Downloads\ai wrapper\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async exports.chat (C:\Users\abhia\Downloads\ai wrapper\backend\src\controllers\chat.controller.js:68:32)
+2026-02-14T15:05:20.264Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:07:25.917Z - POST /api/chat
+Chat Request: {"assistantId":"34d7a1dd-a771-4f13-98f0-34358f9d14d5","message":"hi","userId":"b464a22d-6e0c-4c14-b642-1e2d105241ae"}
+Chat error: PrismaClientValidationError: 
+Invalid `prisma.message.create()` invocation in
+C:\Users\abhia\Downloads\ai wrapper\backend\src\controllers\chat.controller.js:68:53
+
+  65 // I'll assume standard object structure access content.
+  66 
+  67 // 6. Save AI response
+→ 68 const savedAiMessage = await prisma.message.create({
+       data: {
+         role: "assistant",
+         assistantId: "34d7a1dd-a771-4f13-98f0-34358f9d14d5",
+     +   content: String
+       }
+     })
+
+Argument `content` is missing.
+    at wn (C:\Users\abhia\Downloads\ai wrapper\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at $n.handleRequestError (C:\Users\abhia\Downloads\ai wrapper\backend\node_modules\@prisma\client\runtime\library.js:121:6958)
+    at $n.handleAndLogRequestError (C:\Users\abhia\Downloads\ai wrapper\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\abhia\Downloads\ai wrapper\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\abhia\Downloads\ai wrapper\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async exports.chat (C:\Users\abhia\Downloads\ai wrapper\backend\src\controllers\chat.controller.js:68:32)
+2026-02-14T15:09:52.607Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:09:52.610Z - GET /api/assistants/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:10:37.302Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:10:37.305Z - GET /api/assistants/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:10:42.520Z - POST /api/chat/save
+2026-02-14T15:18:02.080Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:18:02.113Z - GET /api/assistants/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:18:05.253Z - POST /api/chat/save
+2026-02-14T15:19:38.429Z - POST /api/chat/save
+2026-02-14T15:19:46.362Z - GET /api/assistants
+2026-02-14T15:19:46.377Z - GET /api/assistants
+2026-02-14T15:20:01.422Z - POST /api/assistants
+2026-02-14T15:20:01.601Z - GET /api/assistants
+2026-02-14T15:20:01.612Z - GET /api/assistants
+2026-02-14T15:20:04.047Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T15:20:04.052Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T15:20:04.068Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T15:20:04.073Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T15:20:06.921Z - POST /api/chat/save
+2026-02-14T15:20:08.295Z - POST /api/chat/save
+2026-02-14T15:20:14.099Z - POST /api/chat/save
+2026-02-14T15:20:15.848Z - POST /api/chat/save
+2026-02-14T15:20:26.562Z - POST /api/chat/save
+2026-02-14T15:20:28.138Z - POST /api/chat/save
+2026-02-14T15:20:54.528Z - GET /api/assistants
+2026-02-14T15:20:54.537Z - GET /api/assistants
+2026-02-14T15:20:59.248Z - GET /api/assistants
+2026-02-14T15:21:08.599Z - POST /api/auth/register
+2026-02-14T15:21:11.726Z - POST /api/auth/login
+2026-02-14T15:21:12.014Z - GET /api/assistants
+2026-02-14T15:21:12.023Z - GET /api/assistants
+2026-02-14T15:21:17.397Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:21:17.405Z - GET /api/assistants/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:21:17.413Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:21:17.416Z - GET /api/assistants/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T15:21:20.307Z - POST /api/chat/save
+2026-02-14T15:21:25.423Z - GET /api/assistants
+2026-02-14T15:21:25.430Z - GET /api/assistants
+2026-02-14T15:21:27.088Z - GET /api/assistants
+2026-02-14T15:21:29.174Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T15:21:29.195Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T15:21:29.199Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T15:21:29.206Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T15:21:33.600Z - GET /api/assistants
+2026-02-14T15:21:33.605Z - GET /api/assistants
+2026-02-14T16:20:40.052Z - POST /api/auth/login
+2026-02-14T16:20:40.422Z - GET /api/assistants
+2026-02-14T16:20:40.434Z - GET /api/assistants
+2026-02-14T16:20:47.790Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T16:20:47.798Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T16:20:47.818Z - GET /api/assistants/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T16:20:47.823Z - GET /api/assistants/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T16:20:50.756Z - GET /api/assistants
+2026-02-14T16:20:50.763Z - GET /api/assistants
+2026-02-14T16:20:52.524Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:20:52.529Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:20:52.539Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:20:52.542Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:20:59.218Z - POST /api/chat/save
+2026-02-14T16:21:00.516Z - POST /api/chat/save
+2026-02-14T16:21:22.365Z - POST /api/chat/save
+2026-02-14T16:21:23.781Z - POST /api/chat/save
+2026-02-14T16:21:35.170Z - POST /api/chat/save
+2026-02-14T16:21:36.390Z - POST /api/chat/save
+2026-02-14T16:21:49.419Z - POST /api/chat/save
+2026-02-14T16:21:51.065Z - POST /api/chat/save
+2026-02-14T16:22:05.487Z - POST /api/chat/save
+2026-02-14T16:22:08.170Z - POST /api/chat/save
+2026-02-14T16:22:24.928Z - POST /api/chat/save
+2026-02-14T16:22:26.197Z - POST /api/chat/save
+2026-02-14T16:22:39.584Z - GET /api/assistants
+2026-02-14T16:22:39.591Z - GET /api/assistants
+2026-02-14T16:22:50.395Z - GET /api/assistants
+2026-02-14T16:22:50.401Z - GET /api/assistants
+2026-02-14T16:26:34.464Z - GET /api/assistants
+2026-02-14T16:26:34.473Z - GET /api/assistants
+2026-02-14T16:26:35.827Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:26:35.831Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:26:35.838Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:26:35.843Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:26:49.434Z - POST /api/auth/register
+2026-02-14T16:26:54.918Z - POST /api/auth/login
+2026-02-14T16:26:55.197Z - GET /api/assistants
+2026-02-14T16:26:55.205Z - GET /api/assistants
+2026-02-14T16:27:02.445Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:27:02.451Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:27:02.460Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:27:02.464Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:27:06.369Z - GET /api/assistants
+2026-02-14T16:27:06.377Z - GET /api/assistants
+2026-02-14T16:27:39.428Z - POST /api/assistants
+2026-02-14T16:27:39.540Z - GET /api/assistants
+2026-02-14T16:27:39.548Z - GET /api/assistants
+2026-02-14T16:27:46.464Z - GET /api/chat/b2d7e92e-4c71-44c8-8eef-a9fe598ea6a5
+2026-02-14T16:27:46.469Z - GET /api/assistants/b2d7e92e-4c71-44c8-8eef-a9fe598ea6a5
+2026-02-14T16:27:46.476Z - GET /api/chat/b2d7e92e-4c71-44c8-8eef-a9fe598ea6a5
+2026-02-14T16:27:46.484Z - GET /api/assistants/b2d7e92e-4c71-44c8-8eef-a9fe598ea6a5
+2026-02-14T16:28:08.162Z - GET /api/assistants
+2026-02-14T16:28:08.168Z - GET /api/assistants
+2026-02-14T16:28:19.848Z - GET /api/assistants
+2026-02-14T16:32:07.594Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T16:32:07.600Z - GET /api/assistants/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T16:32:07.609Z - GET /api/chat/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T16:32:07.616Z - GET /api/assistants/34d7a1dd-a771-4f13-98f0-34358f9d14d5
+2026-02-14T16:32:09.492Z - GET /api/assistants
+2026-02-14T16:32:09.497Z - GET /api/assistants
+2026-02-14T16:32:11.727Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:32:11.732Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:32:11.746Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:32:11.750Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:33:15.176Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T16:33:15.181Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T17:10:40.059Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T17:10:40.067Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T17:12:05.318Z - GET /api/chat/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
+2026-02-14T17:12:05.326Z - GET /api/assistants/d0abc2ee-abeb-4e9b-ba0a-4508449f0b03
